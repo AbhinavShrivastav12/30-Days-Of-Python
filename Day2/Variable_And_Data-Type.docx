@@ -1,0 +1,24 @@
+Here are somthing that I have learned for variables and data-types
+- In python there are many built in fuction and python is case-sensitive.
+- Built in functions are globally available for your use that mean you can make use of the buil in fuction without importing or congiguring.
+- Some of them are : int(), print(), float(), str(), min() and so on.
+- Example: min(20,230,70) #20
+           sum([20,30]) #50
+- Variable store data in the computer memory. Mnemonic variable are recommended to use in many programming language that can be easily remembered and associated.
+
+# Python variable name rules
+- A variable name must start with _ or a letter. 
+ - E.g., first_name, _name, and so on.
+- A variable cannot start with a number.
+ - E.g., 1first, 2_name, and so on.
+- Variable name are case sensitive.
+ - E.g., first_name and First_name are two different variables.
+
+# Casting
+- Converting one data type in to another data type.
+- We use int(), float(), str() and so on.
+Example: COnvert int into float
+ -- first_number = 10
+    print('Integer', first_number) #10
+    changed_float = float(first_number) 
+    print('Float Value', changed_float) #10.0
