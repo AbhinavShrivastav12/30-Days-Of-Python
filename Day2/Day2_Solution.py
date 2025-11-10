@@ -99,3 +99,12 @@ print("Circumfrence of he circle", circum_of_circle)
 user_radius = float(input("Enter the radius of the circle?"))
 user_area = pi * user_radius ** 2
 print("the area of the circle is: ", user_area)
+# 24. Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable names
+firstName = str(input("Enter the first name:"))
+print("The first name is " ,firstName)
+lastName = str(input("Enter the last name:"))
+print("The last name is ", lastName)
+age_ = int(input("Enter the age:"))
+print("The age is " ,age_)
+country_name = str(input("Enter the country name: "))
+print("The country name is ",country_name)
