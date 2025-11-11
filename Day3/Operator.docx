@@ -1,0 +1,19 @@
+# Boolean 
+- A boolean data type represents one of the two values : True or False
+Example:
+-print(True)
+-print(False)
+--------------------------------------------------------------------------------
+# Operators
+- Arithmetic Operators
+  - Addition: a+b
+  - Subtract: a-b
+  - Multiply: a*b
+  - Divide: a/b
+  - Modulus: a%b
+  - Floor Division: a//b
+  - Exponentiation: a**b
+
+- Comparison Operators
+ - In programming langugage we compare values, we uses comaprison operator to compare two values is greater than or less than or equal to other values.
+ 
