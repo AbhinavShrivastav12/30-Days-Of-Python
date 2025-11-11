@@ -5,7 +5,7 @@ Example:
 -print(False)
 --------------------------------------------------------------------------------
 # Operators
-- Arithmetic Operators
+@ Arithmetic Operators
   - Addition: a+b
   - Subtract: a-b
   - Multiply: a*b
@@ -14,6 +14,32 @@ Example:
   - Floor Division: a//b
   - Exponentiation: a**b
 
-- Comparison Operators
+@ Comparison Operators
  - In programming langugage we compare values, we uses comaprison operator to compare two values is greater than or less than or equal to other values.
- 
+ - Operators : ==(Equal), !=(Not Equal), <(Greater Than), >(Less Than), >=(Greater than or Equal to), <=(Less than or Equal)
+   - Example: print(2>=3) #False
+
+- is: Returns True if both variables are the same object (x is y)
+- is not: Returns True if both variables are not same object(x is not y)
+- in: Returns True if the queried list contains a certain item (x in y)
+- not in: Returns True if the queried list doesn't have a  certain item (x not in y)
+  - Example: 
+  print('1 is 1', 1 is 1) #True
+  print('1 is not 2', 1 is not 2) #True
+  print(''A' in 'ABCD'', 'A' in 'ABCD') #True
+  print(''A' not in 'ABCD'', 'A' not in 'ABCD') #False
+----------------------------------------------------------------------------------------------------   
+@ Logical Operators
+- Unlike other programming language python uses keyword and, or, and not for logical operator.
+- Operators: [and,or,not]
+ - Example: 
+   - x<5 and x<10
+   - x<5 or x<10
+   - not(x<5 and x<10)
+
+- Example: 
+  - print(3>2 and 3>1) #True
+  - print(3>2 or 4>5) #True
+  - print(not 3>2) #False
+  - print(not not False) #False
+  - print(not not True) #True
