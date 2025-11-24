@@ -1,0 +1,142 @@
+# String
+- The text is a string data type. Any data written as text is a string. Any data under single, double or tripple quotes are string.
+ - Creating a string
+  - letter  = 'p' # A string could be a single letter or bunch of letter
+- Multiline string
+ - It is created by using tripple single(''') or tripple double(""") quotes.
+  - Example: 
+    - hello = '''I am student who is very good at programming and I am seeking for learning new tools and technologies and can achienve my goal '''
+-------------------------------------------------------------------------------------------------------------------------------
+# String concatenation
+- We can connect string together. Merging or connecting string together is called concatenation.
+ - Example
+  - first_name = "David"
+    last_name = "Doe"
+    full_name = first_name + last_name 
+    print(full_name) # David Doe
+---------------------------------------------------------------------------------------------------------------------------------
+# Escape sequence in strings
+- \n : new line
+- \t : Tab means (8 Spaces)
+- \\ : Back Slash
+- \' : single quote
+- \" : double quote
+   - Example :
+     - print('I hope you are fine. \nAre you?')
+       print('Days\tTopics')
+       print('In everything \"Hello\")
+    - Output: 
+       - I hope you are fine.
+        Are you?
+       - Days        Topics
+       - In everything "Hello"
+---------------------------------------------------------------------------------------------------------------------------------
+# String formating
+* Old style string formating (% operator)
+- In python, there are many ways of formating string. In this section, we will cover some of them. The "%" operator is used to format a set of variables enclosed in a tuple (a fixed size list).
+- %s = string
+- %d = integers
+- %f = float point numbers
+- %.number of digitsf = floating point number with fixed precison
+ - Example :
+  - first_name = "David"
+  - last_name = "Doe"
+  - language = "python"
+  - formated_string = "I am %s %s. I learn %s."%(first_name,last_name,language)
+  - print(formated_string) # I am David Doe. I learn python.
+
+* New style string formating
+first_name = "David"
+last_name = "Doe"
+language = "python"
+formated_string= "I am {} {}. I learn {}.format(first_name,last_name,language)
+print(formated_string) # I am David Doe. I learn python.
+----------------------------------------------------------------------------------------------------------------------------------
+# String Interpolation/f-string
+- Another new string formating is string interpolation, f-string. Strings start with f and we can inject teh data in their corresponding position.
+ - Example :
+    - a = 4
+    - b = 5
+    - print(f'{a} + {b} = {a+b}')
+    - print(f'{a}/{b} = {a/b:.2f}')
+----------------------------------------------------------------------------------------------------------------------------------
+# Python Strings as Sequences of Characters
+- Python strings are sequences of characters, and share their basic methods of access with other Python ordered sequences of objects – lists and tuples. The simplest way of extracting single characters from strings (and individual members from any sequence) is to unpack them into corresponding variables.
+- Unpacking Characters
+- Example:
+language = 'Python'
+a,b,c,d,e,f = language # unpacking sequence characters into variables
+print(a) # P
+print(b) # y
+print(c) # t
+print(d) # h
+print(e) # o
+print(f) # n
+
+- Accessing Characters in Strings by Index
+In programming counting starts from zero. Therefore the first letter of a string is at zero index and the last letter of a string is the length of a string minus one.
+- Example :
+language = 'Python'
+first_letter = language[0]
+print(first_letter) # P
+second_letter = language[1]
+print(second_letter) # y
+
+* If we want to start from right end we can use negative indexing. -1 is the last index.
+- Example :
+last_index = len(language) - 1
+last_letter = language[last_index]
+print(last_letter) # n
+
+- Slicing Python Strings
+In python we can slice strings into substrings.
+- Example :
+language = 'Python'
+first_three = language[0:3] # starts at zero index and up to 3 but not include 3
+print(first_three) #Pyt
+last_three = language[3:6]
+print(last_three) # hon
+# Another way
+last_three = language[-3:]
+print(last_three)   # hon
+last_three = language[3:]
+print(last_three)   # hon
+
+- Reversing a String
+We can easily reverse strings in python.
+- Example :
+greeting = 'Hello, World!'
+print(greeting[::-1]) # !dlroW ,olleH
+
+- Skipping Characters While Slicing
+It is possible to skip characters while slicing by passing step argument to slice method
+- Example :
+language = 'Python'
+pto = language[0:6:2] #
+print(pto) # Pto
+----------------------------------------------------------------------------------------------------------------------------------
+# String Methods
+- There are many string methods which allow us to format strings. See some of the string methods in the following example:
+* capitalize(): Converts the first character of the string to capital letter
+ - Example :
+  challenge = 'thirty days of python'
+print(challenge.capitalize()) # 'Thirty days of python'
+
+* count(): returns occurrences of substring in string, count(substring, start=.., end=..). The start is a starting indexing for counting and end is the last index to count.
+- Example :
+challenge = 'thirty days of python'
+print(challenge.count('y')) # 3
+print(challenge.count('y', 7, 14)) # 1, 
+print(challenge.count('th')) # 2`
+
+* endswith(): Checks if a string ends with a specified ending
+- Example :
+challenge = 'thirty days of python'
+print(challenge.endswith('on'))   # True
+print(challenge.endswith('tion')) # False
+
+* expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
+- Example :
+challenge = 'thirty\tdays\tof\tpython'
+print(challenge.expandtabs())   # 'thirty  days    of      python'
+print(challenge.expandtabs(10)) # 'thirty    days      of        python'
