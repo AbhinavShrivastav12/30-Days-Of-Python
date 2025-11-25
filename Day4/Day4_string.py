@@ -70,31 +70,79 @@ abb = ''.join(word[0].upper() for word in company.split())
 print(abb)
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
+print(company.index('C'))
 
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
+print(company.index('F'))
+
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
+new_company = 'Coding For All People'
+print(new_company.rfind('l'))
+
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+text = 'You cannot end a sentence with because because because is a conjunction'
+print(text.find('because'))
+
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+print(text.rindex('because'))
+
 # 25. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+phrase = 'because because because'
+start = text.index(phrase)
+end = start + len(phrase)
+print(text[start:end])
+
 # 26. Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-# 27. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-# 28. Does ''Coding For All' start with a substring Coding?
+print(text.find('because'))
+
+# 27. Does ''Coding For All' start with a substring Coding?
+print(company.startswith('Coding'))
+
 # 29. Does 'Coding For All' end with a substring coding?
+print(company.endswith('Coding'))
+
 # 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+given_string = '    Coding For All    '
+print(given_string.strip())
+
 # 31. Which one of the following variables return True when we use the method isidentifier():
 #  - 30DaysOfPython
 #  - thirty_days_of_python
+value1 = '30DaysOfPython'
+value2 = 'thirty_days_of_python'
+print(value1.isidentifier())
+print(value2.isidentifier())
+
 # 32. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+list_of =  ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+result = '#'.join(list_of)
+print(result)
+
 # 33. Use the new line escape sequence to separate the following sentences.
 #  - I am enjoying this challenge.
 #  - I just wonder what is next.
+sentence1 = '\n I am enjoying this challenge.'
+sentence2 = '\n I just wonder what is next.'
+print(sentence1)
+print(sentence2)
+
 # 34. Use a tab escape sequence to write the following lines
 #  - Name      Age     Country   City
 #  - Asabeneh  250     Finland   Helsinki
+sentence1 = 'Name\tAge\tCountry\tCity'
+sentence2 = 'Asabeneh\t250\tFinland\tHelsinki'
+print(sentence1)
+print(sentence2)
+
 # 35. Use the string formatting method to display the following:
 #   - radius = 10
 #   - area = 3.14 * radius ** 2
 #   - The area of a circle with radius 10 is 314 meters square.
+radius = 10
+area = 3.14 * radius ** 2
+result = 'The area of the circle with radius {} is {} meters square.'.format(10,area)
+print(result)
+
 # 36. Make the following using string formatting methods:
 #   - 8 + 6 = 14
 #   - 8 - 6 = 2
@@ -103,3 +151,10 @@ print(abb)
 #   - 8 % 6 = 2
 #   - 8 // 6 = 1
 #   - 8 ** 6 = 262144
+print('{0} + {1} = {result}'.format(8,6,result=8+6))
+print('{0} - {1} = {result}'.format(8,6,result=8-6))
+print('{0} * {1} = {result}'.format(8,6,result=8*6))
+print('{0} / {1} = {result}'.format(8,6,result=8/6))
+print('{0} % {1} = {result}'.format(8,6,result=8%6))
+print('{0} // {1} = {result}'.format(8,6,result=8//6))
+print('{0} ** {1} = {result}'.format(8,6,result=8**6))
